@@ -956,15 +956,6 @@ flex-элементов —  в одну строку или в нескольк
   color: var(--text-color);
 }
 
-/* .checkbox-label::before {
-  content: ' ';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-} */
-
 .checkbox-field {
   position: absolute;
   white-space: nowrap;
