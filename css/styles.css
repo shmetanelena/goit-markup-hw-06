@@ -7,7 +7,7 @@
   --accent-button-color: #188ce8;
   --secondary-background-color: #2f303a;
   --other-background-color: #f5f4fa;
-  --cards-border: #EEEEEE;
+  --cards-border: #eeeeee;
   --border-color-main: #000000;
   --icon: #afb1b8;
   --background-color-cards-portf: rgba(33, 150, 243, 0.9);
@@ -71,24 +71,23 @@ body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-title-color);
   color: var(--text-color);
-  
 }
- .conteiner {
-  width: 1200px; 
+.conteiner {
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
- }
- .section {
+}
+.section {
   padding: 94px 0 94px 0;
- }
+}
 /*=====HEADER======*/
 .header {
   /* линия в хедере */
-  border-bottom: 1px solid #ECECEC; 
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 /*Логотип в HEDER*/
 .logo {
@@ -118,7 +117,7 @@ body {
 .header-item {
   position: relative;
 }
- .header-item:not(:last-child) {
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 /* ссылки на студия/контакты/портфолио */
@@ -132,7 +131,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -159,15 +158,15 @@ body {
 Почта телефон в шапке*/
 .header-contact {
   display: flex;
-  margin-left: auto; 
+  margin-left: auto;
 }
 /* хедер - ссылки на маил и телефон */
 .header-contact-link {
-  display: flex; 
+  display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   font-style: normal;
@@ -201,7 +200,7 @@ body {
 
   /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
- /* .header-contact-link:hover .mail,
+/* .header-contact-link:hover .mail,
 .header-contact-link:focus .mail,
 .header-contact-link:hover .tel,
 .header-contact-link:focus .tel{
@@ -215,9 +214,8 @@ body {
   margin-right: auto;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), 
-  url("../images/heroimg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/heroimg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +239,7 @@ body {
 
 .hero-button {
   display: inline-block;
-  width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
+  width: 200px; /* минимальная ширина кнопки, чб избежать переполнения*/
   min-height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -257,7 +255,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .hero-button:focus,
 .hero-button:hover {
   background-color: var(--accent-button-color);
@@ -268,19 +265,19 @@ body {
 
 .benefits-title {
   margin-top: 0;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   width: 270px;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left; 
+  text-align: left;
   text-transform: uppercase;
   color: var(--title-color);
-} 
-.benefits-list{
+}
+.benefits-list {
   display: flex;
 }
 .benefits-item:not(:last-child) {
@@ -301,7 +298,6 @@ body {
   width: 70px;
   height: 70px;
 }
-
 
 /* .benefits-item::before {
   margin-bottom: 30px;
@@ -342,53 +338,52 @@ body {
 /*Чем мы занимаемся*/
 .work {
   padding-top: 0;
- }
- .work-list {
-   display: flex;
- }
- .work-title {
-   margin-top: 0;
-   margin-bottom: 50px;
-   min-height: 42px;
-   font-size: 36px;
-   font-weight: 700;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
-   text-align: center;
-   color: var(--title-color);
- }
- .work-item {
-   width: calc((100% - 30px * 2) / 3);
-   margin-right: 30px;
- 
-   position: relative;
- }
- .action-item:nth-child(3n) {
-   margin: 0;
- }
- /* .work-item:not(:last-child) {
+}
+.work-list {
+  display: flex;
+}
+.work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  min-height: 42px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-color);
+}
+.work-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+
+  position: relative;
+}
+.action-item:nth-child(3n) {
+  margin: 0;
+}
+/* .work-item:not(:last-child) {
    margin-right: 30px;
  } */
- .work-kind-title h3 {
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   text-align: center;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   color: var(--main-title-color);
- }
- .work-kind-title {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   bottom: 0;
-   height: 70px;
-   width: 100%;
-   background-color: rgba(47, 48, 58, 0.8);
- }
- 
+.work-kind-title h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.work-kind-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
 /*Наша команда*/
 .employees {
@@ -412,7 +407,7 @@ body {
 }
 .employees-list {
   display: flex;
-} 
+}
 .employees-name {
   font-size: 16px;
   font-weight: 500;
@@ -434,7 +429,6 @@ body {
 .employees-name {
   text-align: center;
   /* width: 270px; */
-
 }
 .employees-name {
   margin-bottom: 10px;
@@ -455,7 +449,7 @@ body {
 .social-icon-item:nth-child(4n) {
   margin-right: 0;
 }
-.social-icon-link{
+.social-icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,7 +487,6 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
-  
 }
 .clients-list {
   display: flex;
@@ -509,19 +502,19 @@ body {
   width: 170px;
   height: 92px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
 }
- 
+
 .icon-company {
   width: 106px;
   height: 60px;
   object-fit: fill;
   fill: var(--icon);
-  
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .icon-company,
@@ -581,8 +574,7 @@ body {
 .footer-mail-link:focus,
 .footer-mail-link:hover,
 .footer-phone-link:hover,
-.footer-phone-link:focus
-{
+.footer-phone-link:focus {
   color: var(--accent-color);
 }
 
@@ -644,7 +636,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 12px;
-  width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
+  width: 200px; /* минимальная ширина кнопки, чб избежать переполнения*/
   min-height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -658,7 +650,7 @@ body {
   border: transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 .send-plane {
   margin-left: 10px;
 }
@@ -709,34 +701,34 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.button-active{
+.button-active {
   background-color: var(--accent-color);
   color: var(--main-title-color);
 }
 /*КАРТОЧКИ*/
 /* flex-wrap задаёт правила вывода 
 flex-элементов —  в одну строку или в несколько */
-  .cards {
-    display: flex;
-    flex-wrap: wrap; 
-  }
-  /* .cards-item {
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .cards-item {
     width: 370px;
     margin-bottom: 30px;
     margin-right: 30px;
     background-color: var(--main-title-color);
   } */
-  .cards-item {
-    width: calc((100% - 30px * 2) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  
-  /* каждый третий (в строке) */
+.cards-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* каждый третий (в строке) */
 .cards-item:nth-child(3n) {
-    margin-right: 0;
-  }
-  /* Последние три во всем списке */
+  margin-right: 0;
+}
+/* Последние три во всем списке */
 .cards-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -761,7 +753,7 @@ flex-элементов —  в одну строку или в нескольк
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-} 
+}
 .cards-text {
   /* width: 322px; */
   font-size: 16px;
@@ -784,11 +776,11 @@ flex-элементов —  в одну строку или в нескольк
   display: flex;
   align-items: center;
   position: absolute;
-  
+
   width: 100%;
   height: 100%;
   background-color: var(--background-color-cards-portf);
-  
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards-link:hover .cards-overlay,
@@ -860,17 +852,16 @@ flex-элементов —  в одну строку или в нескольк
   line-height: 1.15;
   font-weight: 700;
   color: var(--title-color);
-  
 }
-.modal-field { 
+.modal-field {
   margin-bottom: 10px;
 }
-.input-wrap{
+.input-wrap {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-icon{
+.input-icon {
   position: absolute;
   left: 11px;
   top: 50%;
@@ -892,13 +883,12 @@ flex-элементов —  в одну строку или в нескольк
   border-color: var(--accent-color);
 }
 .modal-form-input:focus + .input-icon,
-.modal-form-input:hover + .input-icon  {
+.modal-form-input:hover + .input-icon {
   fill: var(--accent-color);
 }
 /* Форма комментария в модальном окне */
 .modal-comment {
   margin-bottom: 20px;
-
 }
 .modal-form-text {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -957,16 +947,16 @@ flex-элементов —  в одну строку или в нескольк
 }
 
 .checkbox-field {
-  position: absolute;
+  /* position: absolute;
   white-space: nowrap;
   width: 1px;
-  height: 1px;
-  overflow: hidden;
+  height: 1px; */
+  /* overflow: hidden;
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px;
+  margin: -1px; */
 }
 
 .checkbox-icon {
@@ -990,25 +980,25 @@ flex-элементов —  в одну строку или в нескольк
 .checkbox-label:hover .checkbox-icon {
   border-color: var(--accent-color);
 }
-  .btn-modal-send {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    min-height: 50px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--main-title-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    border: transparent;
+.btn-modal-send {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  } 
-  .btn-modal-send:focus,
-  .btn-modal-send:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-modal-send:focus,
+.btn-modal-send:hover {
   background-color: var(--accent-button-color);
 }
