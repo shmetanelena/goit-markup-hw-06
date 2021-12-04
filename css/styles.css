@@ -609,6 +609,9 @@ body {
   fill: var(--main-title-color);
 }
 /* Блок ПОДПИСАТЬСЯ НА РАССЫЛКУ */
+.footer-social-form {
+  margin-left: auto;
+}
 .footer-form-send {
   display: flex;
   /* align-items: baseline; */
