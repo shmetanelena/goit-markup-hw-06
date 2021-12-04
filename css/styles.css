@@ -849,6 +849,7 @@ flex-элементов —  в одну строку или в нескольк
   background-color: #fff;
   cursor: pointer;
 }
+
 .modal-title {
   margin-bottom: 30px;
   text-align: center;
@@ -858,17 +859,38 @@ flex-элементов —  в одну строку или в нескольк
   color: var(--title-color);
   
 }
-.modal-field {
-margin-bottom: 10px;
+.modal-field { 
+  margin-bottom: 10px;
+}
+.input-wrap{
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-icon{
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .modal-form-input {
-  /* margin-bottom: 28px; */
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px;
+  padding: 12px 12px 12px 42px;
   color: var(--border-color-main);
+
+  /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
+}
+.modal-form-input:focus,
+.modal-form-input:hover {
+  border-color: var(--accent-color);
+}
+.modal-form-input:focus + .input-icon,
+.modal-form-input:hover + .input-icon  {
+  fill: var(--accent-color);
 }
 /* Форма комментария в модальном окне */
 .modal-comment {
@@ -882,6 +904,12 @@ margin-bottom: 10px;
   width: 100%;
   height: 120px;
   resize: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--title-color);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-text::placeholder {
   font-weight: 400;
@@ -899,23 +927,27 @@ margin-bottom: 10px;
   color: rgba(117, 117, 117, 1);
   letter-spacing: 0.01em;
 }
+.modal-form-text:hover,
+.modal-form-textt:focus {
+  border-color: var(--accent-color);
+}
   .btn-modal-send {
     display: block;
     margin: 0 auto;
-    width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
-  min-height: 50px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-title-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  border: transparent;
+    width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: transparent;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
   .btn-modal-send:focus,
   .btn-modal-send:hover {
