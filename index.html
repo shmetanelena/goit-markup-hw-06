@@ -559,8 +559,48 @@
               <label for="comment" class="form-input-text">Комментарий</label>
               <textarea class="modal-form-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
             </div>
-            <button class="btn-modal-send" type="submit">Отправить</button>
 
+            <!-- <div class="modal-field">
+              <input type="checkbox"
+                      name="policy"
+                      id="policy"
+                      class="modal-chek"
+              />
+              <label for="policy" class="check-text">
+                <span class="check-item">
+                  X
+
+
+                  <svg class="input-icon" width="18" height="18">
+                    <use href="./images/symboldefs.svg#iconmodalemail"></use>
+                  </svg>
+
+
+
+
+                </span>
+                Соглашаюсь с рассылкой и принимаю Условия договора 
+              </label>
+
+            </div> -->
+            <label class="checkbox-label">
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="agree"
+                class="checkbox-field"
+              />
+              <svg class="checkbox-icon">
+                <use href="./images/symboldefs.svg#checkbox"></use>
+              </svg>
+              <span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href="/">Условия договора</a>
+              </span>
+            </label>
+
+            <button class="btn-modal-send" type="submit">Отправить</button>
+            
         </form>
 
       </div>

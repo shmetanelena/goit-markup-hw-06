@@ -931,6 +931,89 @@ flex-элементов —  в одну строку или в нескольк
 .modal-form-textt:focus {
   border-color: var(--accent-color);
 }
+/* ЧЕКБОКС */
+/* .check-text {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+} */
+/* пустой квадрат для чукбокса */
+/* .check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color) ;
+  border-radius: 2px;
+  margin-right: 8.38px;
+  align-items: center;
+  justify-content: center;
+} */
+.checkbox-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  cursor: pointer;
+
+  color: var(--text-color);
+}
+
+/* .checkbox-label::before {
+  content: ' ';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+} */
+
+.checkbox-field {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox-icon {
+  /* display: flex; */
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  fill: transparent;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-field:checked + .checkbox-icon {
+  fill: var(--accent-color);
+  border: none;
+}
+
+.checkbox-label:focus-within .checkbox-icon,
+.checkbox-label:hover .checkbox-icon {
+  border-color: var(--accent-color);
+}
   .btn-modal-send {
     display: block;
     margin: 0 auto;
