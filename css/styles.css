@@ -946,18 +946,18 @@ flex-элементов —  в одну строку или в нескольк
   color: var(--text-color);
 }
 
-.checkbox-field {
-  /* position: absolute;
+/* .checkbox-field {
+  position: absolute;
   white-space: nowrap;
   width: 1px;
-  height: 1px; */
-  /* overflow: hidden;
+  height: 1px; 
+  overflow: hidden;
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px; */
-}
+  margin: -1px; 
+} */
 
 .checkbox-icon {
   width: 16px;
