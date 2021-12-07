@@ -620,6 +620,7 @@ body {
 
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -630,6 +631,10 @@ body {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
+}
+.footer-form-input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--main-title-color);
 }
 .btn-footer-send {
   display: flex;
@@ -878,6 +883,10 @@ flex-элементов —  в одну строку или в нескольк
 
   /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
 }
+.modal-form-input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--border-color-main);
+}
 .modal-form-input:focus,
 .modal-form-input:hover {
   border-color: var(--accent-color);
@@ -907,7 +916,8 @@ flex-элементов —  в одну строку или в нескольк
 .modal-form-text::placeholder {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
